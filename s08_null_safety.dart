@@ -28,6 +28,6 @@ void main(List<String> args) {
   String? tempStr1 = null;
   print(tempStr1);
   // 문제 4. null이 들어갈 수 없는 문자열 변수 tempStr2에 null을 대입하고 출력하시오.
-  String? tempStr2 = null;
+  String tempStr2 = '';
   print(tempStr2);
 }
