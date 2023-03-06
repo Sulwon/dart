@@ -60,23 +60,25 @@
 
 void main(List<String> args) {
   // 문제 1. final을 이용해서 List형 상수 tempList2를 선언하고 4, 5, 6을 대입하고 출력하시오.
-  final tempList2 = [4,5,6];
+  final tempList2 = [4, 5, 6];
   print(tempList2);
   // 문제 2. tempList2에 .add 메소드를 이용해서 7을 추가하고 출력하시오.
   tempList2.add(7);
   print(tempList2);
 
   // 문제 3. const를 이용해서 List형 상수 tempList1를 선언하고 4, 5, 6을 대입하고 출력하시오.
-  const tempList1 = [4,5,6];
+  const tempList1 = [4, 5, 6];
+  print(tempList1);
 
   // 문제 4. tempList1에 .add 메소드를 이용해서 7을 추가하고 출력하시오.
-  tempList1.add(7);
+  final newTempList1 = [...tempList1, 7];
+  print(newTempList1);
 
   // 문제 5. var를 이용해서 tempList3를 선언하고 const [4, 5, 6]을 대입하고 출력하시오.
   var tempList3 = const [4, 5, 6];
   print(tempList3);
 
   // 문제 6. tempList3에 .add 메소드를 이용해서 7을 추가하고 출력하시오.
-  tempList3.add(7);
+  tempList3 = [...tempList3, 7];
   print(tempList3);
 }
